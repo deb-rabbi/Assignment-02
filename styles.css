@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+   --main-color:#E02C6D;
+   --black:#13131a;
+   --bg:#010103;
+   --border:.1rem solid rgba(255,255,255,.3);
+
+}
+
+
+
+*{
+   font-family: 'Roboto', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing:border-box;
+   text-decoration: none;
+   text-transform: capitalize;
+   transition: 0.2s linear;
+
+
+}
+
+body{
+   background: var(--bg);
+}
+
+
+/*........... header section start............ */
+
+.header{
+   background: var(--bg);
+   width: 100%;
+   height: 6rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1.5rem 7%;
+   border-bottom: var(--border);
+   
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 1000;
+}
+.header .logo{
+   color:whitesmoke;
+   font-size: 35px;
+
+}
+.header .navbar a{
+   margin-left: 5rem;
+   font-size: 1.7rem;
+   color: #fff;
+}
+.header .navbar a:hover{
+   color: var(--main-color);
+   border-bottom: .1rem solid var(--main-color);
+   padding-bottom: .5rem;
+
+}
+.header .icons div{
+   color: #fff;
+   cursor: pointer;
+   font-size: 25px;
+   margin-left: 2rem;
+}
+.header .icons div:hover{
+   color: var(--main-color);
+}
+/* .........header section end.......... */
+
+ /* this is media query for header  */
+
+@media only screen and (max-width: 688px){
+   .header{
+      width: 100%;
+   }
+   .header .navbar a{
+      display: none;
+   }
+   #search-btn{
+      display: none;
+   }
+   #menu-btn{
+      display: none;
+   }
+   .logo{
+      margin-left: 15%;
+   }
+}
+
+/* ......Home section start.....  */
+
+.home{
+   background: var(--bg);
+   color: whitesmoke;
+   margin: 30px 40px;
+   width: 95%;
+   height: 90vh;
+   /* border: 2px solid green; */
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+
+}
+.home-text{
+   width: 40%;
+   height: 35vh;
+   justify-content:;
+   /* border: 4px solid red; */
+ 
+}
+.home-text h2{
+   margin: 20px;
+   font-size: 40px;
+
+}
+.home-text p{
+   margin: 20px;
+}
+.home-text .btn{
+   font-size: 18px;
+   
+   margin-left: 20px;
+   width: 170px;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   cursor: pointer;
+   align-items: center;
+   background-color: #E02C6D;
+   border-radius: 50px;
+
+}
+.home-text .btn:hover{
+   background-color: whitesmoke;
+}
+.home-text .btn a{
+   color: whitesmoke;
+}
+.home-text .btn a:hover{
+   color: #E02C6D;
+}
+.fa-arrow-right{
+   margin-left: 10px;
+}
+.home-img{
+   width: 40%;
+   height: 70vh;
+   /* border: 4px solid yellow; */
+}
+.home-img img{
+   width: 100%;
+   height: 69vh;
+}
+/* .........Home section start..........  */
+
+/* ......this is media query f.......or home  */
+
+
+@media only screen and (max-width: 688px){
+   .home{
+      display:block;
+      width: 340px;
+   }
+   .home-text{
+      margin: 5px;
+      padding: 0px;
+      width: 320px;
+      height: 25vh;
+      position: relative;
+      bottom: -230px;
+
+      text-align: center;
+   }
+   .home-text h2{
+      font-size: 20px;
+      margin: 0px;
+
+   }
+   .home-text p{
+      font-size: 10px;
+      margin: 5px 0px;
+   }
+   .home-text .btn{
+      margin-left: 80px;
+   }
+   .home-img{
+      margin: 10px;
+      width: 310px;
+      height: 210px;
+      position: relative;
+      top: -150px;
+   }
+   .home-img img{
+      width: 305px;
+      height: 200px;
+      /* position: relative;
+      top: -300px; */
+      border-radius: 10px;
+   }
+}
+
+
+.institute-logos{
+   width: 70%;
+   height: 80px;
+   margin-top: 50px;
+   margin-left: 250px;
+   /* background-color: salmon; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-bottom: .1rem solid var(--main-color);
+   border-top: .1rem solid var(--main-color);
+}
+.image{
+   margin: 50px;
+   width: 70px;
+   height: 50px;
+}
+
+/* ......this is media query for institute-logo....... */
+
+
+@media only screen and (max-width: 688px){
+   .institute-logos{
+      border-bottom: none;
+      border-top: none;
+      width: 390px;
+      height: 150px;
+      margin-left: 10px;
+      margin-top: -10px;
+      padding: 0px;
+      
+      flex-wrap: wrap;
+   }
+   .image{
+      margin: 10px;
+   }
+}
+
+
+/* ..............menu start..........  */
+
+
+#popular-collection-intro{
+   text-align: center;
+   font-size: 35px;
+   font-weight: 600;
+   margin: 50px 0px;
+   color: whitesmoke;
+}
+
+.popular-collection{
+   width: 85%;
+   margin-top: 30px;
+   margin-left: 200px;
+   display: flex;
+   flex-wrap: wrap;
+}
+.menu{
+   width: 400px;
+   height: 550px;
+   border-radius: 10px;
+   margin: 25px;
+   background-color: var(--black);
+   color: whitesmoke;
+}
+.menu-pic{
+   width: 370px;
+   height: 300px;
+ 
+   margin: 10px;
+   border-radius: 10px;
+
+}
+.menu-pic img{
+   width: 350px;
+   height: 295px ;
+   margin: 5px;
+   margin-top: 0px;
+   border-radius: 10px;
+}
+.menu-text{
+   width: 300px;
+   height: 220px;
+  
+   margin-top: 15px;
+   margin-left: 10px;
+   padding-left: 20px;
+}
+.menu-text h1{
+   font-size: 2em;
+}
+
+.fa-star{
+   margin-top: 30px;
+   color: var(--main-color);
+}
+
+#rating-number{
+   margin-left: 20px;
+}
+
+.menu-text p{
+   margin-top: 30px;
+}
+
+
+/* .........product menu start.......... */
+
+@media only screen and (max-width: 688px){
+   .popular-collection{
+      margin: 10px;
+   }
+}
+
+
+.about{
+   color: whitesmoke;
+   margin-top: 20px;
+   font-size: 40px;
+   font-weight: 900px;
+   text-align: center;
+}
+.about-me{
+   margin-top: 20px;
+   margin-left: 80px;
+   width: 90%;
+   height: 80vh;
+   color: whitesmoke;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.my-pic{
+   width: 450px;
+   height: 570px;
+   margin-right: 10px;
+   background-color: var(--bg);
+}
+
+.introduce{
+   width: 450px;
+   height: 250px;
+   margin-left: 10px;
+   padding: 0px 20px;
+}
+
+.introduce h1{
+   font-size: 40px;
+}
+.introduce a{
+   font-size: 18px;
+   margin-top: 40px;
+   
+   width: 170px;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   cursor: pointer;
+   align-items: center;
+   background-color: #E02C6D;
+   border-radius: 50px;
+}
+
+@media only screen and (max-width: 688px){
+   .about-me{
+      width: 300px;
+
+   }
+   .my-pic{
+      width: 250px;
+      height: 270px;
+      position: relative;
+      top: -130px;
+      left: -40px;
+   }
+   .introduce{
+      position: relative;
+      left: -150px;
+
+      
+      font-size: 20px;
+      width: 300px;
+      height: 250px;
+
+   }
+   .introduce h1{
+      font-size: 20px;
+   }
+   .footer-text a:hover{
+      background-color: var(--main-color);
+   }
+   
+}
+
+
+
+
+
+
+
+
+
+.footer{
+   color: whitesmoke;
+   width: 100%;
+   height: 200px;
+   background-color: chocolate;
+   text-align: center;
+   background-color: var(--bg);
+}
+.footer-text{
+   height: 200px;
+   background-color: var(--black);
+}
+.footer-text h1{
+   margin-top: 30px;
+   font-size: 40px;
+}
+.footer-text p{
+   margin-top: 10px;
+}
+.footer-text a{
+   width: 5rem;
+   height: 5rem;
+   line-height: 5rem;
+   font-size: 2rem;
+   color: whitesmoke;
+   border: var(--border);
+   margin: .3rem;
+   border-radius: 50%;
+
+}
+.footer-text a:hover{
+   background-color: var(--main-color);
+}
+
+
+
+
